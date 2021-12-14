@@ -1,7 +1,8 @@
-package com.codegym;
+package refactoring;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import refactoring.Calculator;
 
 import static org.junit.jupiter.api.Assertions.*;
 

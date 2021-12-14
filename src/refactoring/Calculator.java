@@ -1,4 +1,4 @@
-package com.codegym;
+package refactoring;
 
 public class Calculator {
 
