@@ -1,4 +1,4 @@
-package com.codegym;
+package refactorvariable;
 
 import org.junit.jupiter.api.Test;
 
