@@ -194,8 +194,6 @@ public class StudentManager {
 //        for (int i = 0; i < studentsNew.length; i++) {
 //            studentsNew[i] = (ComparableStudent) students[i];
 //        }
-//
-//
 //        Arrays.sort(studentsNew);
 //        students = studentsNew;
 //        displayStudentList();
