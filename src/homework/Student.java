@@ -1,5 +1,7 @@
 package homework;
 
+import sun.awt.image.GifImageDecoder;
+
 public class Student implements Comparable<Student> {
     public static int idStudentStatic = 1000;
     private String name;
@@ -91,12 +93,15 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
-        if (getAverageMark() > o.getAverageMark()){
-            return -1;
-        } else if (getAverageMark() < o.getAverageMark()){
-            return 1;
-        } else {
-            return 0;
+        if (o != null){
+            if (getAverageMark() > o.getAverageMark()) {
+                return -1;
+            } else if (getAverageMark() < o.getAverageMark()) {
+                return 1;
+            } else {
+                return 0;
+            }
         }
+        return 2;
     }
 }

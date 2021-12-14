@@ -189,15 +189,16 @@ public class StudentManager {
         int count = 0;
         for (int i = 0; i < students.length; i++) {
             if (students[i] != null){
-                students[index] = students[i];
                 count++;
             }
         }
         Student[] newStudents = new Student[count];
         for (int i = 0; i < newStudents.length; i++) {
-            newStudents[i] = students[i];
+            newStudents[index] = students[i];
+            index++;
         }
         students = newStudents;
+        Arrays.sort(students);
         displayStudentList();
 
     }
